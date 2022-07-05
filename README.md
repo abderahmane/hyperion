@@ -23,7 +23,9 @@ Your server should now be running at http://locahost:8080 and you will now have 
 
 ## Update data
 
-Once you run the `populate-db` script, you should have two users in your database:
+http://localhost:8080/api/update-data
 
 ### Calculate REC
+
+http://localhost:8080/api/rec
 
