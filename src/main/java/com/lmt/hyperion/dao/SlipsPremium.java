@@ -40,9 +40,9 @@ public class SlipsPremium extends AbstractEntity{
     private String reference;
 
     @JsonProperty("invoice_premium_total")
-    private Double invoicePremiumTotal;
+    private Float invoicePremiumTotal;
     @JsonProperty("commission_refunded")
-    private Double commissionRefunded;
+    private Float commissionRefunded;
 
     @JsonProperty("validation_status")
     @JsonView(RecView.class)
@@ -57,12 +57,12 @@ public class SlipsPremium extends AbstractEntity{
     @JsonProperty("policy_number")
     private String policyNumber;
     @JsonProperty("insured_capital")
-    private Double insuredCapital;
+    private Float insuredCapital;
     @JsonProperty("invoiced_premium")
-    private Double invoicedPremium;
+    private Float invoicedPremium;
 
     @JsonProperty("commission_refunded_total")
-    private Double commissionRefundedTotal;
+    private Float commissionRefundedTotal;
     @JsonProperty("update_progress")
     private Integer updateProgress;
     @JsonProperty("update_status")
@@ -70,7 +70,7 @@ public class SlipsPremium extends AbstractEntity{
     @JsonProperty("warnings_saved")
     private Long warningSaved;
     @JsonProperty("net_amount_total")
-    private Double netAmountTotal;
+    private Float netAmountTotal;
 
     @JsonProperty("reinsurances_id")
     @Transient
@@ -90,5 +90,10 @@ public class SlipsPremium extends AbstractEntity{
     @JsonIgnore
     @Transient
     private Object [] warnings;
+
+    private String country;
+    private String cedants;
+
+    private Float rec;
 
 }

@@ -28,24 +28,34 @@ public class CaseNotLifePremium extends AbstractEntity{
     private String category;
 
     @JsonProperty("commission_cession")
-    private Double commissionCession;
+    private Float commissionCession;
     @JsonProperty("commission_refunded")
-    private Double commissionRefunded;
+    private Float commissionRefunded;
     @JsonProperty("date_effective")
     private String dateEffective;
     @JsonProperty("date_transaction")
     private String dateTransaction;
     private String deadline;
-    private String nature_risque_id;
-    private String policy_number;
-    private Double insured_capital;
-    private Double invoiced_premium;
-    private Double net_amount;
-    private Double paid_commission;
-    private Double part_cedant_coass;
-    private Double premium_ceded;
-    private Double premium_ht;
-    private Double prime_net_ceded;
+    @JsonProperty("nature_risque_id")
+    private String natureRisqueId ;
+    @JsonProperty("policy_number")
+    private String policyNumber;
+    @JsonProperty("insured_capital")
+    private Float insuredCapital;
+    @JsonProperty("invoiced_premium")
+    private Float invoicedPremium;
+    @JsonProperty("net_amount")
+    private Float netAmount;
+    @JsonProperty("paid_commission")
+    private Float paidCommission;
+    @JsonProperty("part_cedant_coass")
+    private Float partCedantCoass;
+    @JsonProperty("premium_ceded")
+    private Float premiumCeded;
+
+    @JsonProperty("premium_ht")
+    private Float premiumHt;
+    private Float prime_net_ceded;
 
     @JsonProperty("branches_id")
     @Transient
@@ -54,6 +64,8 @@ public class CaseNotLifePremium extends AbstractEntity{
     @JsonProperty("slipes_prime_id")
     @Transient
     private OID slipesPrimeId;
+
+    private String slipePrimeId;
 
     @JsonProperty("sub_branches_id")
     @Transient

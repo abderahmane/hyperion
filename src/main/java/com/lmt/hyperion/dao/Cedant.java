@@ -27,7 +27,7 @@ public class Cedant extends AbstractEntity{
     private String estimationType;
     private String logo;
     @JsonProperty("benefit_percentage")
-    private double benefitPercentage;
+    private Float benefitPercentage;
 
     @JsonProperty("reinsurances_id")
     @Transient

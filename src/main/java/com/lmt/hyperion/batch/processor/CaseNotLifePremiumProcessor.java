@@ -11,6 +11,8 @@ public class CaseNotLifePremiumProcessor implements ItemProcessor<CaseNotLifePre
     public CaseNotLifePremium process(CaseNotLifePremium caseNotLifePremium) {
         caseNotLifePremium.setId(caseNotLifePremium.get_id().getOid());
 
+        caseNotLifePremium.setSlipePrimeId(caseNotLifePremium.getSlipesPrimeId().getOid());
+
         return caseNotLifePremium;
     }
 }
