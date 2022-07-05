@@ -61,6 +61,8 @@ public class CaseNotLifePremium extends AbstractEntity{
     @Transient
     private OID branchesId;
 
+    private String brancheId;
+
     @JsonProperty("slipes_prime_id")
     @Transient
     private OID slipesPrimeId;
@@ -72,6 +74,9 @@ public class CaseNotLifePremium extends AbstractEntity{
     private OID subBranchesId;
 
 
+    private String country;
+
+    private String cedants;
 
     @JsonProperty("cedants_id")
     @Transient
