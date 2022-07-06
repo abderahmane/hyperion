@@ -41,7 +41,6 @@ public class SlipsPremiumProcessor implements ItemProcessor<SlipsPremium, SlipsP
 
         List<CaseNotLifePremium> bySlipePrimeId = caseNotLifePremiumRepository.findBySlipePrimeId(slipsPremium.getId());
         if(bySlipePrimeId.size() > 1){
-            System.out.println("KKKKKKKK");
             slipsPremium.setBranch(bySlipePrimeId.get(0).getBranch());
         }
 

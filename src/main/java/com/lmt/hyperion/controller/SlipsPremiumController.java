@@ -2,6 +2,7 @@ package com.lmt.hyperion.controller;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.lmt.hyperion.dao.Model;
+import com.lmt.hyperion.dao.ModelSaerch;
 import com.lmt.hyperion.dao.RecView;
 import com.lmt.hyperion.dao.SlipsPremium;
 import com.lmt.hyperion.service.SlipsPremiumService;
@@ -25,8 +26,8 @@ public class SlipsPremiumController {
     }
 
     @GetMapping( "/rec")
-    public Page<Model> rec(Pageable pageable){
-        return slipsPremiumService.getAll(pageable);
+    public Page<Model> rec(ModelSaerch model){
+        return slipsPremiumService.getAll(model);
     }
 
 }
