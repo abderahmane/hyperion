@@ -29,3 +29,5 @@ http://localhost:8080/api/update-data
 
 http://localhost:8080/api/rec
 
+http://localhost:8080/api/rec?branch=AUTOMOBILE&cedants=Paix Assur&country=COTE D'IVOIRE&page=0&size=1
+
